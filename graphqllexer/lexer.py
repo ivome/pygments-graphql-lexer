@@ -32,7 +32,7 @@ class GraphqlLexer(RegexLexer):
             (r'(-?0|-?[1-9][0-9]*)', Number.Integer),
             (r'\$+[_A-Za-z][_0-9A-Za-z]*', Name.Variable),
             (r'[_A-Za-z][_0-9A-Za-z]+\s?:', Text),
-            (r'(type|query|mutation|@[a-z]+|on|true|false|null)\b', Keyword.Type),
+            (r'(type|query|mutation|extend|implements|directive|@[a-z]+|on|true|false|null)\b', Keyword.Type),
             (r'[!$():=@\[\]{|}]+?', Punctuation),
             (r'[_A-Za-z][_0-9A-Za-z]*', Keyword),
             (r'(\s|,)', Text),
